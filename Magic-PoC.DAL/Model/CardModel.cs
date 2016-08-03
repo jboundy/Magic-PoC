@@ -5,9 +5,11 @@ namespace Magic_PoC.DAL.Model
 {
     public class CardModel
     {
+        public const string CardsQuery = "cards?";
+        public const string AllCardsQuery = "cards";
+
         [JsonProperty(PropertyName = "cards")]
         public List<CardItemModel> Cards { get; set; }
-
     }
 
     public class CardItemModel

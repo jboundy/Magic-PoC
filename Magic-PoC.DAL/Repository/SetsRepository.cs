@@ -10,7 +10,7 @@ namespace Magic_PoC.DAL.Repository
     {
         public async Task<SetModel> GetSet(string set)
         {
-            HttpResponseMessage response = await _client.GetAsync("sets/" + set);
+            HttpResponseMessage response = await Client.GetAsync(SetModel.SetsQuery + set);
             if (!response.IsSuccessStatusCode) return new SetModel();
             var sets = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<SetModel>(sets);

@@ -1,8 +1,17 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Magic_PoC.DAL.Model
 {
     public class SetModel
+    {
+        public const string SetsQuery = "sets/";
+
+        [JsonProperty(PropertyName = "set")]
+        public SetItemModel<JObject> Set { get; set; }
+    }
+
+    public class SetItemModel<T> where T : JObject
     {
         [JsonProperty(PropertyName = "code")]
         public string Code { get; set; }
@@ -18,9 +27,11 @@ namespace Magic_PoC.DAL.Model
         public string MkmName { get; set; }
         [JsonProperty(PropertyName = "releaseDate")]
         public string ReleaseDate { get; set; }
+        [JsonProperty(PropertyName = "booster")]
+        public string[] Booster { get; set; }
+        [JsonProperty(PropertyName = "gathererCode")]
+        public string GathererCode { get; set; }
         [JsonProperty(PropertyName = "magicCardsInfoCode")]
         public string MagicCardsInfoCode { get; set; }
-        [JsonProperty(PropertyName = "block")]
-        public string Block { get; set; }
     }
 }

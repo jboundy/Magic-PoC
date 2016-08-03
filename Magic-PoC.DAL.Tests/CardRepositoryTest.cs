@@ -10,8 +10,15 @@ namespace Magic_PoC.DAL.Tests
         [TestMethod]
         public async Task CanGet_AllCards()
         {
-            var result = await CardsRepository().GetAllCards();
-            Assert.IsNotNull(result);
+            var results = await Task.Run(() => CardsRepository().GetAllCards().GetAwaiter().GetResult().Cards);
+            Assert.IsNotNull(results);
+        }
+
+        [TestMethod]
+        public async Task CanGet_AnyCard_ThruParameter()
+        {
+            var results = await Task.Run(() => CardsRepository().GetSpecificCard("name", "Narset, Enlightened Master").GetAwaiter().GetResult().Cards);
+            Assert.IsNotNull(results);
         }
 
         private CardsRepository CardsRepository()

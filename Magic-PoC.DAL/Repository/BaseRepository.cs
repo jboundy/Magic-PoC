@@ -6,17 +6,17 @@ namespace Magic_PoC.DAL.Repository
 {
     public class BaseRepository : IDisposable
     {
-        public readonly HttpClient _client;
+        public readonly HttpClient Client;
         public BaseRepository()
         {
             var client = new HttpClient { BaseAddress = new Uri("https://api.magicthegathering.io/v1/") };
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            _client = client;
+            Client = client;
         }
         public void Dispose()
         {
-            _client.Dispose();
+            Client.Dispose();
         }
     }
 }
