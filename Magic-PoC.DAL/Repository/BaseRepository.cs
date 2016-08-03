@@ -6,8 +6,9 @@ namespace Magic_PoC.DAL.Repository
 {
     public class BaseRepository : IDisposable
     {
-        public readonly HttpClient Client;
-        public BaseRepository()
+        protected readonly HttpClient Client;
+
+        protected BaseRepository()
         {
             var client = new HttpClient { BaseAddress = new Uri("https://api.magicthegathering.io/v1/") };
             client.DefaultRequestHeaders.Accept.Clear();

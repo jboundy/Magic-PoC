@@ -12,7 +12,7 @@ namespace Magic_PoC.DAL.Tests
         public async Task CanGet_CardSetData()
         {
             var results =  await Task.Run(() => SetsRepository().GetSet("LEA").GetAwaiter().GetResult().Set);
-            Assert.IsNotNull(results);
+            Assert.IsNotNull(results.Name);
         }
 
         private SetsRepository SetsRepository()

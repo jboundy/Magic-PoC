@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 namespace Magic_PoC.DAL.Model
 {
@@ -8,10 +7,10 @@ namespace Magic_PoC.DAL.Model
         public const string SetsQuery = "sets/";
 
         [JsonProperty(PropertyName = "set")]
-        public SetItemModel<JObject> Set { get; set; }
+        public SetItemModel Set { get; set; }
     }
 
-    public class SetItemModel<T> where T : JObject
+    public class SetItemModel
     {
         [JsonProperty(PropertyName = "code")]
         public string Code { get; set; }
