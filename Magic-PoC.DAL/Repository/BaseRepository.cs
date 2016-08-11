@@ -19,7 +19,7 @@ namespace Magic_PoC.DAL.Repository
             Client = client;
         }
 
-        protected async Task<T> GetJsonResponse<T>(HttpResponseMessage response) where T: class, new()
+        protected async Task<T> GetJsonResponse<T>(HttpResponseMessage response) where T : new()
         {    
             if (!response.IsSuccessStatusCode) return new T();
             var data = await response.Content.ReadAsStringAsync();
