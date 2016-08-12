@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using Magic_PoC.DAL.Repository;
+using DAL.Repository.Magic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Magic_PoC.DAL.Tests
+namespace DAL.Tests.Magic
 {
     [TestClass]
     public class SetRepositoryTests

@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magic-PoC.DAL", "Magic-PoC.DAL\Magic-PoC.DAL.csproj", "{043B7729-427B-4D87-82E2-C29BE8244CCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "Magic-PoC.DAL\DAL.csproj", "{043B7729-427B-4D87-82E2-C29BE8244CCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magic-PoC.DAL.Tests", "Magic-PoC.DAL.Tests\Magic-PoC.DAL.Tests.csproj", "{3350CF6C-767A-4905-8AA1-C79AB42E2BF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.Tests", "Magic-PoC.DAL.Tests\DAL.Tests.csproj", "{3350CF6C-767A-4905-8AA1-C79AB42E2BF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

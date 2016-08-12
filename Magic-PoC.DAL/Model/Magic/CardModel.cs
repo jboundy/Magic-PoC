@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Magic_PoC.DAL.Model
+namespace DAL.Model.Magic
 {
     public class CardModel
     {

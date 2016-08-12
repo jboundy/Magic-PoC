@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Magic_PoC.DAL.Model
+namespace DAL.Model.Magic
 {
     public class SetModel
     {

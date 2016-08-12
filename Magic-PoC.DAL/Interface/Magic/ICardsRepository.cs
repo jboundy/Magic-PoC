@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Magic_PoC.DAL.Model;
+using DAL.Model.Magic;
 
-namespace Magic_PoC.DAL.Interface
+namespace DAL.Interface.Magic
 {
     public interface ICardsRepository
     {
