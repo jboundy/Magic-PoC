@@ -2,7 +2,7 @@
 
 namespace DAL.Model.Magic
 {
-    public class LegalitiesModel
+    public class MagicLegalitiesModel
     {
         [JsonProperty(PropertyName = "format")]
         public string Format { get; set; }

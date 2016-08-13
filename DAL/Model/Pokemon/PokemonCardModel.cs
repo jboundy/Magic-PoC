@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace DAL.Model.Pokemon
 {
-    public class CardModel
+    public class PokemonCardModel
     {
         public const string FineCards = "findcards?";
         public const string CardName = "cardname=";

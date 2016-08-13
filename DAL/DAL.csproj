@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,30 +45,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\Magic\ICardsRepository.cs" />
-    <Compile Include="Interface\Magic\ISetsRepository.cs" />
-    <Compile Include="Interface\Pokemon\ICardsRepository.cs" />
-    <Compile Include="Model\Magic\CardModel.cs" />
-    <Compile Include="Model\Magic\LegalitiesModel.cs" />
-    <Compile Include="Model\Magic\SetModel.cs" />
-    <Compile Include="Model\Pokemon\CardModel.cs" />
-    <Compile Include="Model\Yugioh\CardModel.cs" />
-    <Compile Include="Model\Yugioh\CardPriceModel.cs" />
-    <Compile Include="Model\Yugioh\SetModel.cs" />
-    <Compile Include="Model\Yugioh\SetPriceModel.cs" />
+    <Compile Include="Interface\Magic\IMagicCardsRepository.cs" />
+    <Compile Include="Interface\Magic\IMagicSetsRepository.cs" />
+    <Compile Include="Interface\Pokemon\IPokemonCardsRepository.cs" />
+    <Compile Include="Interface\Yugioh\IYugiohCardsRepository.cs" />
+    <Compile Include="Model\Magic\MagicCardModel.cs" />
+    <Compile Include="Model\Magic\MagicLegalitiesModel.cs" />
+    <Compile Include="Model\Magic\MagicSetModel.cs" />
+    <Compile Include="Model\Pokemon\PokemonCardModel.cs" />
+    <Compile Include="Model\Yugioh\YugiohCardModel.cs" />
+    <Compile Include="Model\Yugioh\YugiohCardPriceModel.cs" />
+    <Compile Include="Model\Yugioh\YugiohCheckPriceModel.cs" />
+    <Compile Include="Model\Yugioh\YugiohImageModel.cs" />
+    <Compile Include="Model\Yugioh\YugiohSetModel.cs" />
+    <Compile Include="Model\Yugioh\YugiohSetPriceModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BaseRepository.cs" />
-    <Compile Include="Repository\Magic\CardsRepository.cs" />
-    <Compile Include="Repository\Magic\SetsRepository.cs" />
-    <Compile Include="Repository\Pokemon\CardsRepository.cs" />
+    <Compile Include="Repository\Magic\MagicCardsRepository.cs" />
+    <Compile Include="Repository\Magic\MagicSetsRepository.cs" />
+    <Compile Include="Repository\Pokemon\PokemonCardsRepository.cs" />
+    <Compile Include="Repository\Yugioh\YugiohCardsRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interface\Yugioh\" />
-    <Folder Include="Repository\Yugioh\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

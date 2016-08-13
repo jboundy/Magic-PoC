@@ -1,38 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
 
 namespace DAL.Model.Yugioh
 {
-    public class CheckPriceModel
-    {
-        [JsonProperty(PropertyName = "status")]
-        public string Status { get; set; }
-
-        [JsonProperty(PropertyName = "data")]
-        public List<CardModel> Prices { get; set; }
-    }
-
-    public class CardPriceDataModel
+    public class YugiohCardPriceModel
     {
         [JsonProperty(PropertyName = "data")]
-        public List<CardPriceDataDetailModel> Data { get; set; }
+        public List<YugiohCardPriceDataModel> Data { get; set; }
     }
 
-    public class CardPriceDataDetailModel
+    public class YugiohCardPriceDataModel
     {
         [JsonProperty(PropertyName = "listings")]
         public string[] Listings { get; set; }
 
         [JsonProperty(PropertyName = "prices")]
-        public List<CardPriceModel> Prices { get; set; }
+        public List<YugiohCardPriceDataDetailModel> Prices { get; set; }
     }
 
-    public class CardPriceModel
+    public class YugiohCardPriceDataDetailModel
     {
         [JsonProperty(PropertyName = "high")]
         public string High { get; set; }

@@ -3,8 +3,8 @@ using DAL.Model.Magic;
 
 namespace DAL.Interface.Magic
 {
-    public interface ISetsRepository
+    public interface IMagicSetsRepository
     {
-        Task<SetModel> GetSet(string set);
+        Task<MagicSetModel> GetSet(string set);
     }
 }

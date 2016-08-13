@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace DAL.Tests.Magic
 {
     [TestClass]
-    public class CardRepositoryTest
+    public class MagicCardRepositoryTest
     {
         [TestMethod]
         public async Task CanGet_AllCards()
@@ -21,9 +21,9 @@ namespace DAL.Tests.Magic
             Assert.IsNotNull(results);
         }
 
-        private CardsRepository CardsRepository()
+        private MagicCardsRepository CardsRepository()
         {
-            return new CardsRepository();
+            return new MagicCardsRepository();
         }
     }
 }

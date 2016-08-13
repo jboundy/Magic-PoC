@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace DAL.Tests.Magic
 {
     [TestClass]
-    public class SetRepositoryTests
+    public class MagicSetRepositoryTests
     {
 
         [TestMethod]
@@ -15,9 +15,9 @@ namespace DAL.Tests.Magic
             Assert.IsNotNull(results.Name);
         }
 
-        private SetsRepository SetsRepository()
+        private MagicSetsRepository SetsRepository()
         {
-            return new SetsRepository();
+            return new MagicSetsRepository();
         }
     }
 }

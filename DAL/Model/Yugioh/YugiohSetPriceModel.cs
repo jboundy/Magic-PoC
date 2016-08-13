@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
 namespace DAL.Model.Yugioh
 {
-    public class SetPriceModel
+    public class YugiohSetPriceModel
     {
         [JsonProperty(PropertyName = "data")]
-        public List<SetRaritiesModel> SetRaritiesPriceData { get; set; }
+        public List<YugiohSetRaritiesModel> SetRaritiesPriceData { get; set; }
 
         [JsonProperty(PropertyName = "average")]
         public string Average { get; set; }
@@ -23,7 +19,7 @@ namespace DAL.Model.Yugioh
 
     }
 
-    public class SetRaritiesModel
+    public class YugiohSetRaritiesModel
     {
         [JsonProperty(PropertyName = "Rare")]
         public string Rare { get; set; }

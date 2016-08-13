@@ -3,10 +3,16 @@ using Newtonsoft.Json;
 
 namespace DAL.Model.Yugioh
 {
-    public class CardModel
+    public class YugiohCardModel
     {
+        public const string CardData = "card_data/";
+
+        public const string QueryParameter = "?";
+
+        public const string CardName = "card_name=";
+
         [JsonProperty(PropertyName = "data")]
-        public List<CardItemModel> Card { get; set; }
+        public YugiohCardItemModel Card { get; set; }
 
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
@@ -16,11 +22,12 @@ namespace DAL.Model.Yugioh
 
         [JsonProperty(PropertyName = "rarity")]
         public string Rarity { get; set; }
+
         [JsonProperty(PropertyName = "price_data")]
-        public List<CardPriceDataModel> PriceData { get; set; }
+        public YugiohCardPriceDataModel PriceData { get; set; }
     }
 
-    public class CardItemModel
+   public class YugiohCardItemModel
     {
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
