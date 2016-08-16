@@ -61,10 +61,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Magic\MagicCardRepositoryTest.cs" />
-    <Compile Include="Magic\MagicSetRepositoryTests.cs" />
+    <Compile Include="Magic\MagicSetRepositoryTest.cs" />
     <Compile Include="Pokemon\PokemonCardRepositoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Yugioh\YugiohCardRepositoryTest.cs" />
+    <Compile Include="Yugioh\YugiohSetsRepositoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

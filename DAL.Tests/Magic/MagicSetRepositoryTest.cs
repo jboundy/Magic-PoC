@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace DAL.Tests.Magic
 {
     [TestClass]
-    public class MagicSetRepositoryTests
+    public class MagicSetRepositoryTest
     {
 
         [TestMethod]
